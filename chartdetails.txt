@@ -1,0 +1,105 @@
+Requirements From Project Instructions:
+
+1. You must include at least 6 multi-value charts
+2. You must include at least 3 single-value charts
+3. Your dashboard should incorporate at least 4 different types of
+multi-value charts, such as bar charts, grouped bar charts,
+stacked bar charts, scatter plots, line charts, area charts, pie
+charts, horizontal bar charts, scatter plots, and stacked area
+charts.
+4. Charts should have an initial transition and transform on load – it
+should be a smooth transition.
+5. You should have at least 1 chart that can change data either with
+a dropdown or text box.
+6. You should create at least 1 chart that has brush functionality,
+and it should highlight the data in the brushed area
+7. You should create at least 1 chart that can be zoomed in.
+8. You should create at least 1 chart that has button/radio/checkbox
+to update the chart style (CSS)
+9. You should have at least 1 interactive legend.
+10.Do not use the same interactive legend from given example
+during the class – please think about other way to make use
+interactivity with the legend
+11.You should include at least 1 chart with tooltips for your data
+12.Ticks and Tick labels for axes are mandatory on all charts.
+13.You should include the chart name and axes labels for every
+chart.
+14.Ensure that your charts are easily readable; for instance, add
+labels or use methods that make them clear to readers.
+
+Chart 1: Distance Travelled by Each Customer
+
+Visualization Type: Line Chart
+X-axis: Customer ID
+Y-axis: Flight Distance
+Features:
+initial transition and transform on load – it should be a smooth transition.
+Tooltips to show exact distances
+--> color-code by customer type (Loyal vs Disloyal)
+Ticks and Tick labels for axes
+chart name and axes labels
+
+Chart 2: Customer Satisfaction Proportion
+
+Visualization Type: Pie Chart or Donut Chart
+Categories:
+
+Satisfied
+Neutral or Dissatisfied
+
+
+Will show percentage breakdown of customer satisfaction
+
+Chart 3: Satisfactory Levels by Category
+
+Visualization Type: Bar Chart
+Interactivity: Dropdown/Selector to choose category
+Categories to select from:
+
+Checkin service
+Ease of Online booking
+Gate location
+On-board service
+Baggage Handling
+
+
+Y-axis: Number of customers
+X-axis: Satisfaction levels (1-5)
+Mobile Considerations: Dropdown or segmented control for category selection
+
+Chart 4: Total Delay Minutes vs Departure/Arrival Time Convenience
+
+Visualization Type: Scatter Plot
+X-axis: Departure/Arrival Time Convenient Rating
+Y-axis: Total Delay Minutes
+Potential Color Coding: Customer Type or Satisfaction Status
+
+Chart 5: Average Satisfaction Rate by Seat Class
+
+Visualization Type: Bar Chart
+X-axis: Seat Classes (Eco, Eco Plus, Business)
+Y-axis: Average Satisfaction Rate
+Optional: Error bars to show variation
+
+Chart 6: First 15 Disloyal Customers' Ticket Prices
+
+Visualization Type: Stacked Bar Chart
+X-axis: Customer ID (first 15 disloyal customers)
+Y-axis: Ticket Prices
+Stacked with first four ticket prices
+Fixed Y-axis domain as specified
+
+Chart 7: Number of Loyal Customers
+
+Visualization Type: Simple Bar Chart or Counter
+Breakdown by gender, age group, or travel type
+
+Chart 8: Total Flight Distance
+
+Visualization Type: Card/Text Display
+Simply show the total sum of all flight distances
+
+Chart 9: Customers with No Delays
+
+Visualization Type: Counter or Pie Chart
+Show number of customers with zero departure and arrival delays
