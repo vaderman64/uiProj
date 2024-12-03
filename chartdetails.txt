@@ -41,14 +41,13 @@ chart name and axes labels
 
 Chart 2: Customer Satisfaction Proportion
 
-Visualization Type: Pie Chart or Donut Chart
+Visualization Type: Pie Chart
 Categories:
 
 Satisfied
 Neutral or Dissatisfied
 
-
-Will show percentage breakdown of customer satisfaction
+shows percentage breakdown of customer satisfaction
 
 Chart 3: Satisfactory Levels by Category
 

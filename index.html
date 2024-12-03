@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CanJet Customer Satisfaction Dashboard</title>
+    <link rel="icon" href="images/logo.png" type="image/ico">
     <!-- D3 -->
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <!-- Bootstrap CSS -->
@@ -12,6 +13,8 @@
     <!-- Js Files -->
     <script src="main.js"></script>
     <script src="chart1.js"></script>
+    <script src="chart2.js"></script>
+    <script src="chart3.js"></script>
     <style>
         body {
             background-color: #f4f6f9;
@@ -45,6 +48,10 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             padding: 10px;
 
+        }
+
+        .chart-2 {
+            margin-left: 125px;
         }
 
         .sidebar {
@@ -126,8 +133,7 @@
                     <div class="col-md-6">
                         <div class="dashboard-card">
                             <h5>Customer Satisfaction Distribution</h5>
-                            <div id="chart2" class="chart-placeholder">
-                                Chart 2 Placeholder
+                            <div id="chart2" class="chart-2"> 
                             </div>
                         </div>
                     </div>

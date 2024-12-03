@@ -1,4 +1,3 @@
-
 // Load the CSV data
 d3.csv("data.csv").then(data => {
     // Process the data
@@ -21,8 +20,8 @@ d3.csv("data.csv").then(data => {
     console.log("Data Loaded Successfully");
     // Pass data to individual chart functions
     createChart1(data);
-    // createChart2(data);
-    // createChart3(data);
+    createChart2(data);
+    createChart3(data);
     // createChart4(data);
     // createChart5(data);
     // createChart6(data);
