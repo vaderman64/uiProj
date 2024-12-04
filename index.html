@@ -15,9 +15,15 @@
     <script src="chart1.js"></script>
     <script src="chart2.js"></script>
     <script src="chart3.js"></script>
+    <script src="chart4.js"></script>
+    <!-- <script src="chart5.js"></script> -->
+    <!-- <script src="chart6.js"></script> -->
+    <!-- <script src="chart7.js"></script>
+    <script src="chart8.js"></script>
+    <script src="chart9.js"></script> -->
     <style>
         body {
-            background-color: #f4f6f9;
+            background-color: #f4f4f9;
         }
 
         .dashboard-card {
@@ -55,13 +61,25 @@
         }
 
         .sidebar {
-            background-color: #2c3e50;
+            background-color: #333333;
             color: white;
             height: 100vh;
             position: fixed;
             top: 0;
             left: 0;
         }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+        }
+
+        #header {
+            width: 90px;
+            height: auto;
+            margin-left: 70px;
+        }
+        
     </style>
 </head>
 
@@ -70,7 +88,8 @@
         <div class="row">
             <!-- Sidebar -->
             <div class="col-md-2 sidebar py-4">
-                <h3 class="text-center mb-5">CanJet Dashboard</h3>
+                <img src="images/logo.png" id="header">
+                <h3 class="text-center mb-5">Dashboard</h3>
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a class="nav-link active" href="#">Customer Insights</a>
@@ -120,20 +139,10 @@
                     </div>
 
                     <!-- Chart 2: Satisfaction Proportion -->
-
-                    <!-- 
-                    
-                    To Change:
-                    example: const svg = d3.select("#chart2")
-                    also change class="chart-placeholder" to chart2 when done, or unify it to one size fits all charts styles
-
-                    when creating chart wrap in this createChart1(data)
-                    and uncomment the relevent code in main.js
-                    -->
                     <div class="col-md-6">
                         <div class="dashboard-card">
                             <h5>Customer Satisfaction Distribution</h5>
-                            <div id="chart2" class="chart-2"> 
+                            <div id="chart2" class="chart-2">
                             </div>
                         </div>
                     </div>
@@ -152,7 +161,7 @@
                                 <option>On-board Service</option>
                                 <option>Baggage Handling</option>
                             </select>
-                            <div id="chart3" class="chart-placeholder">
+                            <div id="chart3">
                                 Chart 3 Placeholder
                             </div>
                         </div>
@@ -162,8 +171,7 @@
                     <div class="col-md-6">
                         <div class="dashboard-card">
                             <h5>Flight Delays vs Time Convenience</h5>
-                            <div id="chart4" class="chart-placeholder">
-                                Chart 4 Placeholder
+                            <div id="chart4">
                             </div>
                         </div>
                     </div>
@@ -176,7 +184,6 @@
                         <div class="dashboard-card">
                             <h5>Satisfaction by Seat Class</h5>
                             <div id="chart5" class="chart-placeholder">
-                                Chart 5 Placeholder
                             </div>
                         </div>
                     </div>

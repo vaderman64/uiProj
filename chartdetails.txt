@@ -7,10 +7,10 @@ multi-value charts, such as bar charts, grouped bar charts,
 stacked bar charts, scatter plots, line charts, area charts, pie
 charts, horizontal bar charts, scatter plots, and stacked area
 charts.
+
 4. Charts should have an initial transition and transform on load – it
 should be a smooth transition.
-5. You should have at least 1 chart that can change data either with
-a dropdown or text box.
+
 6. You should create at least 1 chart that has brush functionality,
 and it should highlight the data in the brushed area
 7. You should create at least 1 chart that can be zoomed in.
@@ -71,14 +71,13 @@ Chart 4: Total Delay Minutes vs Departure/Arrival Time Convenience
 Visualization Type: Scatter Plot
 X-axis: Departure/Arrival Time Convenient Rating
 Y-axis: Total Delay Minutes
-Potential Color Coding: Customer Type or Satisfaction Status
 
 Chart 5: Average Satisfaction Rate by Seat Class
 
 Visualization Type: Bar Chart
 X-axis: Seat Classes (Eco, Eco Plus, Business)
 Y-axis: Average Satisfaction Rate
-Optional: Error bars to show variation
+
 
 Chart 6: First 15 Disloyal Customers' Ticket Prices
 

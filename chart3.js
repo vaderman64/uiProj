@@ -70,7 +70,7 @@ function createChart3(data) {
             .attr("y", d => yScale(d[1]))
             .attr("width", xScale.bandwidth())
             .attr("height", d => height - yScale(d[1]))
-            .attr("fill", "#3c0a0a");
+            .attr("fill", "#FF0000");
 
         // X-axis Label
         svg.append("text")

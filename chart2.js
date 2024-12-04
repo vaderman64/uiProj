@@ -1,5 +1,4 @@
 function createChart2(data) {
-    console.log("Creating Chart 2 with data:", data.length, "points");
     // Calculate satisfaction proportions
     const satisfactionCounts = d3.rollup(
         data, 
@@ -71,16 +70,14 @@ function createChart2(data) {
     // Add category labels
     arcs.append('text')
     .attr('transform', d => `translate(${label.centroid(d)})`)
-    .attr('y', 15) // Move the entire label group vertically
+    .attr('y', 15)
     .style('text-anchor', 'middle')
     .style('font-size', '10px')
     .selectAll('tspan')
     .data(d => d.data.category.split(' '))
     .enter()
     .append('tspan')
-    .attr('x', 0) // Center-align each tspan
-    .attr('dy', (d, i) => i === 0 ? '0em' : '1em') // Offset subsequent lines
+    .attr('x', 0)
+    .attr('dy', (d, i) => i === 0 ? '0em' : '1em')
     .text(d => d);
-
-
 }

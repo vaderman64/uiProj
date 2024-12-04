@@ -9,6 +9,7 @@ d3.csv("data.csv").then(data => {
         d['Arrival Delay in Minutes'] = +d['Arrival Delay in Minutes'];
         d['Total Departure and Arrival Delay in Minutes'] = +d['Total Departure and Arrival Delay in Minutes'];
         d['Average Satisfaction'] = +d['Average Satisfaction'];
+        d['Departure/Arrival time convenient'] = +d['Departure/Arrival time convenient'];
         d['1st Ticket Price'] = +d['1st Ticket Price'];
         d['2nd Ticket Price'] = +d['2nd Ticket Price'];
         d['3rd Ticket Price'] = +d['3rd Ticket Price'];
@@ -22,7 +23,7 @@ d3.csv("data.csv").then(data => {
     createChart1(data);
     createChart2(data);
     createChart3(data);
-    // createChart4(data);
+    createChart4(data);
     // createChart5(data);
     // createChart6(data);
     // createChart7(data);
