@@ -26,7 +26,7 @@ d3.csv("data.csv").then(data => {
     createChart4(data);
     createChart5(data);
     createChart6(data);
-    // createChart7(data);
+    createChart7(data);
     // createChart8(data);
     // createChart9(data);
 }).catch(error => {
