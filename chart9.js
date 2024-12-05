@@ -54,12 +54,16 @@ function createChart9(data) {
 
   // Add labels
   svg
-    .selectAll("text")
-    .data(pie(pieData))
-    .enter()
-    .append("text")
-    .attr("transform", (d) => `translate(${arc.centroid(d)})`)
-    .attr("text-anchor", "middle")
-    .style("font-size", "12px")
-    .text((d) => `${d.data.label}: ${d.data.value}`);
+  .selectAll("text")
+  .data(pie(pieData))
+  .enter()
+  .append("text")
+  .attr("transform", (d) => `translate(${arc.centroid(d)})`)
+  .attr("text-anchor", "middle")
+  .style("font-size", "16px")
+  .style("font-weight", "bold")
+  .html(
+    (d) =>
+      `<tspan>${d.data.label}</tspan><tspan x="0" dy="1.2em" style="font-weight:normal">${d.data.value}%</tspan>`
+  );
 }

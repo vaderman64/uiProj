@@ -47,7 +47,7 @@ function createChart1(data) {
         .attr("class", "dot")
         .attr("cx", d => xScale(d.id))
         .attr("cy", d => yScale(d['Flight Distance']))
-        .attr("r", 3)
+        .attr("r", 4)
         .attr("fill", d => "#FFC000")
         .attr("opacity", 0)
         .transition()
