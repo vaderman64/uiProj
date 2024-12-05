@@ -36,7 +36,7 @@ d3.csv("data.csv")
     createChart6(data);
     createChart7(data);
     createChart8(data);
-    // createChart9(data);
+    createChart9(data);
   })
   .catch((error) => {
     console.error("Error loading the CSV data:", error);
