@@ -41,7 +41,7 @@ function createChart7(data) {
         .range([height, 0]);
 
     // Define the colors
-    const colors = ['#FFC000', '#FF0000'];
+    const colors = ['#FFC000', '#ED1C24'];
 
     // Create bars
     svg.selectAll('.bar')

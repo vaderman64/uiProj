@@ -29,7 +29,7 @@ function createChart2(data) {
     // Color scale
     const color = d3.scaleOrdinal()
         .domain(['Satisfied', 'Neutral / Dissatisfied'])
-        .range(['#FFC000', '#FF0000']);
+        .range(['#FFC000', '#ED1C24']);
 
     // Pie layout
     const pie = d3.pie()
