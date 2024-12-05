@@ -1,5 +1,5 @@
 function createChart6(data) {
-    // Filter first 15 disloyal customers (e.g., customers with lowest satisfaction scores)
+    // Filter first 15 disloyal customers
     const disloyalCustomers = data
         .sort((a, b) => a.satisfaction - b.satisfaction)
         .slice(0, 15);
