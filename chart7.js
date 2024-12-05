@@ -6,7 +6,7 @@ function createChart7(data) {
     const genderCounts = d3.rollup(
         loyalCustomers, 
         v => v.length, 
-        d => d.Gender  // Assuming 'Gender' is a field in your data
+        d => d.Gender
     );
 
     // Convert the rollup to an array of objects
@@ -40,6 +40,9 @@ function createChart7(data) {
         .nice()
         .range([height, 0]);
 
+    // Define the colors
+    const colors = ['#FFC000', '#FF0000'];
+
     // Create bars
     svg.selectAll('.bar')
         .data(genderData)
@@ -50,14 +53,10 @@ function createChart7(data) {
         .attr('y', d => y(d.count))
         .attr('width', x.bandwidth())
         .attr('height', d => height - y(d.count))
-        .attr('fill', '#007bff');
+        .attr('fill', (d, i) => colors[i % colors.length]);
 
     // Add x-axis
     svg.append('g')
-        .selectAll('.x-axis')
-        .data(genderData)
-        .enter()
-        .append('g')
         .attr('transform', `translate(0,${height})`)
         .call(d3.axisBottom(x))
         .selectAll('text')
