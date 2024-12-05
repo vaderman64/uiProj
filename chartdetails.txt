@@ -77,6 +77,8 @@ Chart 5: Average Satisfaction Rate by Seat Class
 Visualization Type: Bar Chart
 X-axis: Seat Classes (Eco, Eco Plus, Business)
 Y-axis: Average Satisfaction Rate
+Includes brush functionality,
+and it should highlight the data in the brushed area
 
 
 Chart 6: First 15 Disloyal Customers' Ticket Prices

@@ -24,8 +24,8 @@ d3.csv("data.csv").then(data => {
     createChart2(data);
     createChart3(data);
     createChart4(data);
-    // createChart5(data);
-    // createChart6(data);
+    createChart5(data);
+    createChart6(data);
     // createChart7(data);
     // createChart8(data);
     // createChart9(data);
