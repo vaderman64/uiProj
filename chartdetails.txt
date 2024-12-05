@@ -11,12 +11,19 @@ charts.
 4. Charts should have an initial transition and transform on load – it
 should be a smooth transition.
 
+
+
 6. You should create at least 1 chart that has brush functionality,
 and it should highlight the data in the brushed area
 7. You should create at least 1 chart that can be zoomed in.
 8. You should create at least 1 chart that has button/radio/checkbox
 to update the chart style (CSS)
 9. You should have at least 1 interactive legend.
+
+
+
+
+
 10.Do not use the same interactive legend from given example
 during the class – please think about other way to make use
 interactivity with the legend

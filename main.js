@@ -41,3 +41,22 @@ d3.csv("data.csv")
   .catch((error) => {
     console.error("Error loading the CSV data:", error);
   });
+  function switchColors() {
+    // Select all bars
+    d3.selectAll('#chart7 .bar')
+        .each(function(d, i) {
+            // Get the current color of the bar
+            const currentColor = d3.select(this).attr('fill');
+
+            // Switch to the other color
+            const newColor = currentColor === '#FFC000' ? '#ED1C24' : '#FFC000';
+
+            // Set the new color
+            d3.select(this).attr('fill', newColor);
+        });
+}
+  function switchStyle(){
+    console.log("Switcha");
+    d3.select('#chart7 svg').style('background-color', d3.event.target.checked? 'white' : '#F2F2F2');
+    d3.selectAll('.bar').style('fill', d => colors[d.count % colors.length]);
+}
